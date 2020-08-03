@@ -1,0 +1,12 @@
+name: 07-23test
+title: 07-23test
+username:
+account: haojin
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 2605185
+bundleId: 3426256
+url: https://haojin.shinyapps.io/07-23test/
+when: 1595514888.30086
+asMultiple: FALSE
+asStatic: FALSE

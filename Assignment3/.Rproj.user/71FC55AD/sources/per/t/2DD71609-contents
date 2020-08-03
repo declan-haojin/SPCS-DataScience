@@ -1,0 +1,127 @@
+---
+title: "Assignment3"
+author: "Haojin Li (Declan)"
+date: "2020/7/24"
+output:
+  pdf_document:
+    toc: yes
+---
+
+# Question 10
+---
+
+## Initiation
+```{r}
+library(ISLR)
+data(Carseats)
+```
+
+## (a) Fit a multiple regression model to predict Sales using Price, Urban, and US.
+```{r}
+fit <- lm(Carseats$Sales ~ Carseats$Price+Carseats$Urban+Carseats$US)
+summary(fit)
+```
+
+## (b) Provide an interpretation of each coefficient in the model. Becareful some of the variables in the model are qualitative!
+
+When price increases by 1 and other variable stay unchanged, the sales will decrease by 0.054.
+When Urban increases by 1 and other variable stay unchanged, the sales will decrease by 0.021.
+The US sales on average 1.2 more than non-US.
+
+## (c) Write out the model in equation form, being careful to handle the qualitative variables properly.
+
+
+$Sales = 13.043469 + Price \times(-0.054459)+ Urban \times (-0.021916) + US \times 1.200573$
+
+## (d) For which of the predictors can you reject the null hypothesis H0 : βj = 0?
+
+***I don't know what is null hypothesis H0 : βj = 0***
+
+## (e) On the basis of your response to the previous question, fit a smaller model that only uses the predictors for which there is evidence of association with the outcome.
+```{r}
+fit1 <- lm(Sales ~ Price + US, data = Carseats)
+summary(fit1)
+```
+
+## (f) How well do the models in (a) and (e) fit the data ?
+
+We can measure the performance of models by `Multiple R-squared` values.
+Both values are around 0.23 which indicates models are not good since they are much smaller than 1
+
+## (g) Using the model from (e), obtain 95% confidence intervals for the coefficient(s).
+```{r}
+confint(fit1)
+```
+
+## (h) Is there evidence of outliers or high leverage observations in the model from (e) ?
+```{r}
+par(mfrow = c(2, 2))
+plot(fit1)
+```
+
+
+# 3.6.1
+---
+
+```{r}
+library(ISLR)
+library(MASS)
+```
+
+# 3.6.2
+---
+
+```{r}
+lm.fit <- lm(medv ~ lstat, data=Boston)
+summary(lm.fit)
+```
+
+```{r}
+coef(lm.fit)
+confint(lm.fit)
+```
+
+```{r}
+predict (lm.fit, data.frame(lstat=c(5,10 ,15)), interval ="confidence")
+```
+
+```{r}
+attach(Boston)
+plot(lstat, medv)
+abline(lm.fit)
+```
+```{r}
+par(mfrow=c(2,2))
+plot(lm.fit)
+```
+
+```{r}
+plot(hatvalues (lm.fit))
+which.max(hatvalues (lm.fit))
+```
+
+# 3.6.3
+---
+
+```{r}
+lm.fit1 <- lm(medv ~ lstat+age, data=Boston )
+summary(lm.fit1)
+```
+
+```{r}
+lm.fit2 <- lm(medv ~., data=Boston)
+summary(lm.fit2)
+```
+```{r}
+lm.fit3 <- lm(medv ~ .-age, data=Boston)
+summary (lm.fit3)
+```
+
+# 3.6.4
+---
+
+```{r}
+summary (lm(medv ~ lstat*age, data=Boston))
+```
+
+

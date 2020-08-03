@@ -1,0 +1,2 @@
+"0","cv.boston=cv.tree(tree.boston)"
+"0","plot(cv.boston$size,cv.boston$dev,type='b')"

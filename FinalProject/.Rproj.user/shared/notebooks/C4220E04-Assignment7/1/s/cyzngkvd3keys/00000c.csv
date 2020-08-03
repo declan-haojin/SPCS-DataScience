@@ -1,0 +1,9 @@
+"0","library(tree)"
+"0","library(ISLR)"
+"0","data(Carseats)"
+"0","High=ifelse(Carseats$Sales<=8,as.factor(""No""),as.factor(""Yes""))"
+"0","Carseats=data.frame(Carseats,High)"
+"0","tree.carseats=tree(High~.-Sales,Carseats)"
+"0","plot(tree.carseats)"
+"2","Error in plot.tree(tree.carseats) : cannot plot singlenode tree
+"

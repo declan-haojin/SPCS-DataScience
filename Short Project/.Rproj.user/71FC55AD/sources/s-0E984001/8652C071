@@ -1,0 +1,32 @@
+{
+    "id": "8652C071",
+    "path": null,
+    "project_path": null,
+    "type": "r_dataframe",
+    "hash": "0",
+    "contents": "",
+    "dirty": false,
+    "created": 1595839811866.0,
+    "source_on_save": false,
+    "relative_order": 4,
+    "properties": {
+        "expression": "latimes_state_totals",
+        "caption": "latimes_state_totals",
+        "totalObservations": "183",
+        "displayedObservations": "183",
+        "variables": "5",
+        "cacheKey": "D32B98DA",
+        "object": "latimes_state_totals",
+        "environment": "",
+        "contentUrl": "grid_resource/gridviewer.html?env=&obj=latimes_state_totals&cache_key=D32B98DA&max_cols=50",
+        "preview": "0"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 7022364572772560233,
+    "encoding": "",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1595839811866,
+    "read_only": false,
+    "read_only_alternatives": []
+}

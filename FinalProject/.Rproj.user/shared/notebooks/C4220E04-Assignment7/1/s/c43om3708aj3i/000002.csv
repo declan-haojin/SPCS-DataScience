@@ -1,0 +1,7 @@
+"0","bag.boston = randomForest(medv~., data =  Boston, mtry = 13, ntree = 25)"
+"0","yhat.bag = predict(bag.boston, newdata = Boston[-train,])"
+"0","mean((yhat.bag-boston.test)^2)"
+"1","[1]"
+"1"," 2.664612"
+"1","
+"

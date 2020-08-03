@@ -1,0 +1,32 @@
+{
+    "id": "A7F8991E",
+    "path": null,
+    "project_path": null,
+    "type": "r_dataframe",
+    "hash": "0",
+    "contents": "",
+    "dirty": false,
+    "created": 1595526947935.0,
+    "source_on_save": false,
+    "relative_order": 3,
+    "properties": {
+        "expression": "Carseats",
+        "caption": "Carseats",
+        "totalObservations": 400,
+        "displayedObservations": 400,
+        "variables": 11,
+        "cacheKey": "21F0E78B",
+        "object": "Carseats",
+        "environment": "",
+        "contentUrl": "grid_resource/gridviewer.html?env=&obj=Carseats&cache_key=21F0E78B&max_cols=50",
+        "preview": 0
+    },
+    "folds": "",
+    "lastKnownWriteTime": 25896140246941800,
+    "encoding": "",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1595526947935,
+    "read_only": false,
+    "read_only_alternatives": []
+}

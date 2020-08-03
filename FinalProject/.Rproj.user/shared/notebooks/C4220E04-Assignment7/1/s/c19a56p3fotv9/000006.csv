@@ -1,0 +1,3 @@
+"0","yhat=predict(tree.boston,newdata=Boston[-train,])"
+"0","boston.test=Boston[-train,""medv""]"
+"0","plot(yhat,boston.test)"

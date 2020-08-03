@@ -1,0 +1,12 @@
+name: ShortProject
+title: ShortProject
+username:
+account: haojin
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 2615805
+bundleId: 3441514
+url: https://haojin.shinyapps.io/ShortProject/
+when: 1595861941.60487
+asMultiple: FALSE
+asStatic: FALSE

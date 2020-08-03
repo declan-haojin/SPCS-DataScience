@@ -1,0 +1,2 @@
+"0","yhat.bag = predict(bag.boston, newdata = Boston[-train,])"
+"0","plot(yhat.bag, boston.test)"

@@ -1,0 +1,32 @@
+{
+    "id": "049D385E",
+    "path": null,
+    "project_path": null,
+    "type": "r_dataframe",
+    "hash": "0",
+    "contents": "",
+    "dirty": false,
+    "created": 1595844476910.0,
+    "source_on_save": false,
+    "relative_order": 5,
+    "properties": {
+        "expression": "latimes_county_totals",
+        "caption": "latimes_county_totals",
+        "totalObservations": "7978",
+        "displayedObservations": "7978",
+        "variables": "7",
+        "cacheKey": "23317CDF",
+        "object": "latimes_county_totals",
+        "environment": "",
+        "contentUrl": "grid_resource/gridviewer.html?env=&obj=latimes_county_totals&cache_key=23317CDF&max_cols=50",
+        "preview": "0"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1595843236,
+    "encoding": "",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1595844476910,
+    "read_only": false,
+    "read_only_alternatives": []
+}

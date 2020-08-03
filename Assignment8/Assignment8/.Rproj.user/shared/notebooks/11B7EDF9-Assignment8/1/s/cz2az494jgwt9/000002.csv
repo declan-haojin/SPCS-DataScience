@@ -1,0 +1,4 @@
+"0","train = sample (200 , 100)"
+"0","svmfit = svm(y~.,data = dat [train , ],kernel =""radial"","
+"0","gamma = 1,cost = 1)"
+"0","plot(svmfit , dat[train , ])"

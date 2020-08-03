@@ -1,0 +1,25 @@
+"0","library(tree)"
+"0","library(ISLR)"
+"2","
+载入程辑包：‘ISLR’
+
+"
+"2","The following object is masked _by_ ‘.GlobalEnv’:
+
+    Carseats
+
+"
+"0","attach(Carseats)"
+"2","The following object is masked _by_ .GlobalEnv:
+
+    High
+
+"
+"0","High=ifelse(Sales<=8,""No"",""Yes"")"
+"0","Carseats=data.frame(Carseats,High)"
+"0","tree.carseats=tree(High~.-Sales,Carseats)"
+"2","强制改变过程中产生了NA"
+"2","强制改变过程中产生了NA"
+"0","plot(tree.carseats)"
+"2","Error in plot.tree(tree.carseats) : cannot plot singlenode tree
+"

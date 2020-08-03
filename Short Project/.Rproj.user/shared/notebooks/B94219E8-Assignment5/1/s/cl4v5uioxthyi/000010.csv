@@ -1,0 +1,3 @@
+"0","plot(cumsum(pve), xlab=""Principal Component"", ylab=""Cumulative Proportion of Variance Explained"","
+"0",""
+"0","ylim=c(0,1), type='b')"

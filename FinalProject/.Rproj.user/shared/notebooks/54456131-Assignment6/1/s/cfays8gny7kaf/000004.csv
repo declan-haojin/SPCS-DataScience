@@ -1,0 +1,7 @@
+"0","set.seed(3)"
+"0","km.out = kmeans(x, 3, nstart = 1)"
+"0","km.out$tot.withinss"
+"1","[1]"
+"1"," 97.97927"
+"1","
+"

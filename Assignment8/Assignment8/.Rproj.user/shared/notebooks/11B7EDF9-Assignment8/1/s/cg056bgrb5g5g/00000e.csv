@@ -1,0 +1,8 @@
+"0","svmfit.flex=svm(y~., data=dat[train ,], kernel =""radial"","
+"0","gamma=50, cost=1, decision.values =T)"
+"0","fitted=attributes (predict (svmfit.flex ,dat[train ,], decision.values=T))$decision.values"
+"0","# rocplot(fitted,dat[train ,""y""],add=T,col=""red"")"
+"0",""
+"0","fitted =attributes (predict (svmfit.opt ,dat[-train ,], "
+"0","decision.values=T))$decision.values"
+"0","rocplot (fitted ,dat[-train ,""y""], main=""Test Data"")"
